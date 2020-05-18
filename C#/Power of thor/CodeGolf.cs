@@ -1,0 +1,2 @@
+using c = System.Console;
+class C { static void Main() { int p(string s) => int.Parse(s); var i = c.ReadLine().Split(' '); int x, y; string n, e; x = p(i[0]) - p(i[2]); (x, e) = x < 0 ? (-x, "W") : (x, "E"); y = p(i[1]) - p(i[3]); (y, n) = y < 0 ? (-y, "N") : (y, "S"); for (; ; ) c.WriteLine((y-- > 0 ? n : "") + (x-- > 0 ? e : "")); } }
